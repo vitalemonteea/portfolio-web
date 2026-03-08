@@ -62,7 +62,7 @@ export function Hero() {
                     className="w-24 h-24 md:w-32 md:h-32 border border-primary bg-card overflow-hidden mb-8 shadow-[6px_6px_0px_0px_#D9EB3F] relative"
                 >
                     <img
-                        src="/avatar.jpg"
+                        src="/avatar.png"
                         alt="钱金城"
                         className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-all duration-500 hover:scale-110"
                     />
