@@ -29,18 +29,18 @@ export function Projects() {
 
     return (
         <section id="projects" className="py-24 relative bg-[#030303]">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-6 max-w-5xl">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="mb-16 flex items-baseline justify-between"
+                    className="mb-16"
                 >
-                    <div className="flex items-baseline gap-4">
-                        <h2 className="text-4xl md:text-6xl font-black text-white tracking-tight">
-                            <span className="text-primary font-mono text-xl md:text-3xl mr-2">{t.projects.number}</span> {t.projects.title} {"{"}
-                        </h2>
-                    </div>
+                    <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight flex items-baseline gap-4">
+                        <span className="text-primary font-mono text-xl md:text-3xl">{t.projects.number}</span>
+                        <span>{t.projects.title}</span>
+                        <span className="text-white/30 font-mono font-medium">{"{"}</span>
+                    </h2>
                 </motion.div>
 
                 {/* Project Grid */}
@@ -95,7 +95,7 @@ export function Projects() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="mt-16 text-4xl md:text-6xl font-black text-white/20 uppercase tracking-tight"
+                    className="mt-16 text-right text-4xl md:text-6xl font-mono font-medium text-white/30 uppercase tracking-tight"
                 >
                     {"}"}
                 </motion.div>

@@ -38,18 +38,18 @@ export function TechStack() {
             {/* Background cyber grid */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(217,235,63,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(217,235,63,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container mx-auto px-6 max-w-5xl relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-4"
                 >
-                    <div className="flex items-baseline gap-4">
-                        <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight">
-                            <span className="text-primary font-mono text-xl md:text-2xl mr-2">{t.techStack.number}</span> {t.techStack.title} <span className="opacity-50 text-3xl">{"{"}</span>
-                        </h2>
-                    </div>
+                    <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight flex items-baseline gap-4">
+                        <span className="text-primary font-mono text-xl md:text-3xl">{t.techStack.number}</span>
+                        <span>{t.techStack.title}</span>
+                        <span className="text-white/30 font-mono font-medium">{"{"}</span>
+                    </h2>
                     <p className="text-muted-foreground font-mono text-sm uppercase tracking-widest max-w-sm text-right">
                         {t.techStack.subtitle}
                     </p>
@@ -92,7 +92,7 @@ export function TechStack() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="mt-16 text-3xl md:text-4xl font-black text-white/20 uppercase tracking-tight"
+                    className="mt-16 text-right text-4xl md:text-6xl font-mono font-medium text-white/30 uppercase tracking-tight"
                 >
                     {"}"}
                 </motion.div>

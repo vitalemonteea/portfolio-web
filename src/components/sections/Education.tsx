@@ -13,15 +13,20 @@ export function Education() {
             {/* Background grid texture */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(217,235,63,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(217,235,63,0.02)_1px,transparent_1px)] bg-[size:30px_30px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
-            <div className="container mx-auto px-6 max-w-4xl relative z-10">
+            <div className="container mx-auto px-6 max-w-5xl relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="mb-16 flex items-baseline gap-4"
+                    className="mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tight flex items-center gap-4">
-                        <span className="text-primary font-mono text-xl md:text-2xl mr-2">{t.education.number}</span> <GraduationCap className="w-8 h-8 text-primary" /> {t.education.title}
+                    <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight flex items-center gap-4">
+                        <span className="text-primary font-mono text-xl md:text-3xl">{t.education.number}</span>
+                        <span className="flex items-center gap-3">
+                            <GraduationCap className="w-8 h-8 md:w-10 md:h-10 text-primary" />
+                            {t.education.title}
+                        </span>
+                        <span className="text-white/30 font-mono font-medium">{"{"}</span>
                     </h2>
                 </motion.div>
 
@@ -65,6 +70,15 @@ export function Education() {
                             </div>
                         ))}
                     </div>
+                </motion.div>
+
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    className="mt-16 text-right text-4xl md:text-6xl font-mono font-medium text-white/30 uppercase tracking-tight"
+                >
+                    {"}"}
                 </motion.div>
             </div>
         </section>

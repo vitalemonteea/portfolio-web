@@ -33,8 +33,10 @@ export function About() {
                     viewport={{ once: true }}
                     className="mb-16 flex items-baseline gap-4 justify-center md:justify-start"
                 >
-                    <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight">
-                        <span className="text-primary font-mono text-xl md:text-3xl mr-2">{t.about.number}</span> {t.about.title} {"{"}
+                    <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight flex items-baseline gap-4">
+                        <span className="text-primary font-mono text-xl md:text-3xl">{t.about.number}</span>
+                        <span>{t.about.title}</span>
+                        <span className="text-white/30 font-mono font-medium">{"{"}</span>
                     </h2>
                 </motion.div>
 
@@ -86,7 +88,7 @@ export function About() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="mt-16 text-4xl md:text-6xl font-black text-white/20 uppercase tracking-tight flex justify-end"
+                    className="mt-16 text-right text-4xl md:text-6xl font-mono font-medium text-white/30 uppercase tracking-tight"
                 >
                     {"}"}
                 </motion.div>

@@ -45,10 +45,12 @@ export function Process() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="mb-16 flex items-baseline gap-4"
+                    className="mb-16"
                 >
-                    <h2 className="text-4xl md:text-6xl font-black text-white tracking-tight">
-                        <span className="text-primary font-mono text-xl md:text-3xl mr-2">04.</span> 迭代记录 {"{"}
+                    <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight flex items-baseline gap-4">
+                        <span className="text-primary font-mono text-xl md:text-3xl">04.</span>
+                        <span>迭代记录</span>
+                        <span className="text-white/30 font-mono font-medium">{"{"}</span>
                     </h2>
                 </motion.div>
 
@@ -98,7 +100,7 @@ export function Process() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="mt-16 text-4xl md:text-6xl font-black text-white/20 uppercase tracking-tight"
+                    className="mt-16 text-right text-4xl md:text-6xl font-mono font-medium text-white/30 uppercase tracking-tight"
                 >
                     {"}"}
                 </motion.div>

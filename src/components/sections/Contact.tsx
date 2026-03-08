@@ -18,17 +18,19 @@ export function Contact() {
 
     return (
         <section id="contact" className="py-24 relative bg-black">
-            <div className="container mx-auto px-6 max-w-3xl text-center">
+            <div className="container mx-auto px-6 max-w-5xl">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="space-y-6 mb-16"
+                    className="mb-16 space-y-6"
                 >
-                    <h2 className="text-4xl md:text-6xl font-black text-white tracking-tight flex items-baseline justify-center gap-4">
-                        <span className="text-primary font-mono text-xl md:text-3xl">{t.contact.number}</span> {t.contact.title} {"{"}
+                    <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tight flex items-baseline gap-4">
+                        <span className="text-primary font-mono text-xl md:text-3xl">{t.contact.number}</span>
+                        <span>{t.contact.title}</span>
+                        <span className="text-white/30 font-mono font-medium">{"{"}</span>
                     </h2>
-                    <p className="text-muted-foreground text-lg leading-relaxed max-w-xl mx-auto font-medium">
+                    <p className="text-muted-foreground text-lg leading-relaxed max-w-4xl font-medium">
                         <span className="text-primary font-mono mr-2">&gt;</span>
                         {t.contact.pitch}
                     </p>
@@ -68,10 +70,6 @@ export function Contact() {
                     >
                         {t.contact.btn} <span className="font-mono group-hover:translate-x-1 transition-transform">_</span>
                     </Button>
-
-                    <div className="mt-16 text-4xl md:text-6xl font-black text-white/20 uppercase tracking-tight">
-                        {"}"}
-                    </div>
                 </motion.div>
             </div>
 
@@ -142,6 +140,6 @@ export function Contact() {
                     </>
                 )}
             </AnimatePresence>
-        </section>
+        </section >
     );
 }
