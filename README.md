@@ -4,7 +4,7 @@
 
 A personal portfolio website built with **Next.js 16 + Tailwind CSS v4 + Framer Motion**, featuring a unique **"AI Dev Mode"** that exposes the actual prompts used to generate each section — showcasing how this site was built with AI-assisted development end-to-end.
 
-**Live site →** [portfolio-jc.vercel.app](https://portfolio-jc.vercel.app) *(coming soon)*
+**Live site →** [portfolio-39p8q2m43-vitalemonteeas-projects.vercel.app](https://portfolio-39p8q2m43-vitalemonteeas-projects.vercel.app)
 
 ---
 
